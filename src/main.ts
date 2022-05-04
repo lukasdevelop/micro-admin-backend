@@ -6,7 +6,7 @@ import { ConfigService} from '@nestjs/config'
 
 const logger = new Logger('Main')
 const configService = new ConfigService()
-
+  
 async function bootstrap() {
   const app = await NestFactory.createMicroservice(AppModule, {
     transport: Transport.RMQ,
